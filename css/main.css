@@ -277,4 +277,42 @@ body {
           font-size: 15px;
           font-weight: bold; }
 
+.viewing .viewing__content {
+  width: 80%;
+  margin: 0 auto; }
+  .viewing .viewing__content .card-title {
+    color: #29303b;
+    font-size: 15px;
+    font-weight: bold; }
+  .viewing .viewing__content .card-text {
+    color: #686f7a;
+    font-size: 13px;
+    font-weight: normal; }
+  .viewing .viewing__content .raiting {
+    display: flex; }
+    .viewing .viewing__content .raiting .raiting__start {
+      color: #F4C150;
+      font-size: 13px;
+      font-weight: normal;
+      margin-right: 2px; }
+    .viewing .viewing__content .raiting span:nth-child(2) {
+      color: #686f7a;
+      font-size: 13px;
+      font-weight: bold; }
+    .viewing .viewing__content .raiting span:last-child {
+      color: #686f7a;
+      font-size: 13px;
+      font-weight: normal; }
+  .viewing .viewing__content .price {
+    text-align: right; }
+    .viewing .viewing__content .price .old-price {
+      color: #686f7a;
+      font-size: 13px;
+      font-weight: normal;
+      text-decoration: line-through; }
+    .viewing .viewing__content .price .new-price {
+      color: #29303b;
+      font-size: 15px;
+      font-weight: bold; }
+
 /*# sourceMappingURL=main.css.map */
