@@ -15,7 +15,7 @@ body {
 .owl-next {
   position: absolute;
   top: 33%;
-  left: -4%;
+  left: -3%;
   width: 45px;
   height: 45px;
   border-radius: 50% !important;
@@ -34,7 +34,7 @@ body {
 
 .owl-next {
   left: unset;
-  right: -4%; }
+  right: -3%; }
 
 .btn__white {
   color: 15px;
