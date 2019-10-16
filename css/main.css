@@ -168,4 +168,27 @@ body {
       border: 1px solid #ec5252;
       color: #fff; }
 
+.intro {
+  background: linear-gradient(-45deg, #EC5252 0%, #6E1A52 100%); }
+  .intro .intro__content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px; }
+    .intro .intro__content .intro__items .intro__icon {
+      color: #fff;
+      font-size: 50px;
+      font-weight: bold;
+      margin-right: 25px; }
+    .intro .intro__content .intro__items .intro__p {
+      padding-top: 10px; }
+      .intro .intro__content .intro__items .intro__p p:first-child {
+        color: #fff;
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 0; }
+      .intro .intro__content .intro__items .intro__p p:last-child {
+        color: #fff;
+        font-size: 15px;
+        font-weight: normal; }
+
 /*# sourceMappingURL=main.css.map */
