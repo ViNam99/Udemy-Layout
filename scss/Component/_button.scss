@@ -1,0 +1,15 @@
+.btn__white {
+    @include styleText($fs-0, $fw-bold-0, $color-gray-4);
+    @include styleButton($color-white-0, $color-gray-4, $pd-1 + 1, $pd-1 + 2);
+    &:hover {
+        @include styleHover($color-white-0, black, black);
+    }
+}
+
+.btn__red {
+    @include styleText($fs-0, $fw-bold-0, $color-white-0);
+    @include styleButton($color-red-0, $color-red-0, $pd-1 + 1, $pd-1 + 2);
+    &:hover {
+        @include styleHover($color-red-2, $color-trans, $color-white-0);
+    }
+}

@@ -11,4 +11,102 @@ body {
   color: #29303b;
   background-color: #fff; }
 
+.btn__white {
+  color: 15px;
+  font-size: 600;
+  font-weight: #686f7a;
+  background-color: #fff;
+  border: 1px solid #686f7a;
+  padding: 11px 12px; }
+  .btn__white:hover {
+    background-color: #fff;
+    border: 1px solid black;
+    color: black; }
+
+.btn__red {
+  color: 15px;
+  font-size: 600;
+  font-weight: #fff;
+  background-color: #ec5252;
+  border: 1px solid #ec5252;
+  padding: 11px 12px; }
+  .btn__red:hover {
+    background-color: #992337;
+    border: 1px solid transparent;
+    color: #fff; }
+
+.header {
+  border-bottom: 1px solid #cacbcc; }
+  .header .navbar-brand {
+    flex-grow: 1; }
+    .header .navbar-brand img {
+      width: 110px;
+      height: 100%; }
+  .header .catogories {
+    color: #505763;
+    font-size: 13px;
+    font-weight: normal;
+    align-self: center;
+    flex-grow: 1; }
+  .header .input__search {
+    flex-grow: 5; }
+    .header .input__search .input-group {
+      background-color: #f2f3f5;
+      border: 1px solid #f2f3f5; }
+      .header .input__search .input-group .form-control {
+        background-color: transparent;
+        border: 1px solid transparent; }
+        .header .input__search .input-group .form-control:focus {
+          outline: none;
+          box-shadow: none;
+          background-color: #fff;
+          border-top: 1px solid #fff;
+          border-left: 1px solid #fff;
+          border-bottom: 1px solid #fff; }
+          .header .input__search .input-group .form-control:focus + .input-group-append .input-group-text {
+            background-color: #fff;
+            border-top: 1px solid #fff;
+            border-right: 1px solid #fff;
+            border-bottom: 1px solid #fff; }
+            .header .input__search .input-group .form-control:focus + .input-group-append .input-group-text:hover {
+              color: #fff;
+              background-color: #ec5252;
+              border: 1px solid #ec5252; }
+      .header .input__search .input-group .input-group-text {
+        background-color: transparent;
+        border: 1px solid transparent;
+        color: #ec5252; }
+    .header .input__search .input-group-text:hover {
+      cursor: pointer;
+      background-color: #ec5252;
+      border: 1px solid #ec5252;
+      color: #fff; }
+  .header .navbar-nav {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; }
+    .header .navbar-nav .nav-item .nav-link {
+      color: #505763;
+      font-size: 13px;
+      font-weight: normal; }
+    .header .navbar-nav .nav-item:hover {
+      background-color: rgba(20, 23, 28, 0.05); }
+    .header .navbar-nav .nav-item:nth-child(2) {
+      border-right: 1px solid #cacbcc; }
+    .header .navbar-nav .nav-item:nth-child(3) {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      text-align: center; }
+  @media screen and (max-width: 1200px) {
+    .header .bussiness,
+    .header .instructor {
+      display: none; } }
+  @media screen and (max-width: 768px) {
+    .header .catogories,
+    .header .input__search {
+      display: none; }
+    .header .navbar-nav {
+      display: flex; } }
+
 /*# sourceMappingURL=main.css.map */

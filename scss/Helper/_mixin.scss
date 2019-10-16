@@ -1,0 +1,66 @@
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin styleHover($bg-color, $boder-color, $color) {
+    background-color: $bg-color;
+    border: $bd-0 solid $boder-color;
+    color: $color;
+}
+
+@mixin styleButton($bg-color, $border-color, $pd-top-bottom, $pd-left-right) {
+    background-color: $bg-color;
+    border: $bd-0 solid $border-color;
+    padding: $pd-top-bottom $pd-left-right;
+}
+
+@mixin styleSearch ($bg-color, $boder-color, $bg-focus, $border-focus) {
+    .input-group {
+        background-color: $bg-color;
+        border: $bd-0 solid $boder-color;
+        .form-control {
+            background-color: $color-trans;
+            border: $bd-0 solid $color-trans;
+            &:focus {
+                outline: none;
+                box-shadow: none;
+                background-color: $bg-focus;
+                border-top: $bd-0 solid $border-focus;
+                border-left: $bd-0 solid $border-focus;
+                border-bottom: $bd-0 solid $border-focus;
+                &+.input-group-append {
+                    .input-group-text {
+                        background-color: $bg-focus;
+                        border-top: $bd-0 solid $border-focus;
+                        border-right: $bd-0 solid $border-focus;
+                        border-bottom: $bd-0 solid $border-focus;
+                        &:hover {
+                            color: $color-white-0;
+                            background-color: $color-red-0;
+                            border: $bd-0 solid $color-red-0;
+                        }
+                    }
+                }
+            }
+        }
+        .input-group-text {
+            background-color: $color-trans;
+            border: $bd-0 solid $color-trans;
+            color: $color-red-0;
+        }
+    }
+}
+
+@mixin respond-to($breakpoint) {
+    @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+        $value: map-get($map: $breakpoints, $key: $breakpoint);
+        @media screen and (max-width: $value) {
+            @content;
+        }
+    }
+    @else {
+        @warn "{$breakpoint)} không tồn tại trong kích thước màn hình";
+    }
+}
