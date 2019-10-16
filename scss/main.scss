@@ -3,10 +3,11 @@
 @import '../scss/Helper/mixin';
 //Base
 @import './Base/reset';
-@import './Base/custimize';
+@import './Base/customize';
 //Component
 @import './Component/button';
 //Layout
 @import './Layout/header';
 @import 'Layout/cover';
 @import './Layout/intro';
+@import './Layout/course';
