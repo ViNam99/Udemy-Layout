@@ -417,4 +417,95 @@ body {
       border-bottom: 1px solid #dedfe0;
       border-right: none !important; } }
 
+.footer {
+  padding: 50px;
+  width: 90%;
+  margin: 0 auto; }
+  .footer ul {
+    list-style: none; }
+    .footer ul li {
+      margin-top: 10px; }
+      .footer ul li a {
+        text-decoration: none !important;
+        color: #007791;
+        font-size: 13px;
+        font-weight: normal; }
+        .footer ul li a:hover {
+          color: #29303b;
+          font-size: 13px;
+          font-weight: normal; }
+  .footer .footer__left .footer__item:nth-child(1) li:nth-child(1) a,
+  .footer .footer__left .footer__item:nth-child(1) li:nth-child(2) a {
+    text-decoration: none !important;
+    color: #007791;
+    font-size: 13px;
+    font-weight: bold; }
+    .footer .footer__left .footer__item:nth-child(1) li:nth-child(1) a:hover,
+    .footer .footer__left .footer__item:nth-child(1) li:nth-child(2) a:hover {
+      color: #29303b;
+      font-size: 13px;
+      font-weight: bold; }
+  .footer .footer__right {
+    position: relative; }
+    .footer .footer__right i {
+      position: absolute;
+      top: 20px;
+      right: 135px;
+      z-index: 9; }
+    .footer .footer__right select {
+      padding: 5px 30px;
+      position: absolute;
+      top: 10px;
+      right: 0; }
+  .footer .footer__bottom {
+    padding: 30px 0;
+    margin-top: 50px; }
+    .footer .footer__bottom .footer__logo img {
+      width: 110px;
+      margin-right: 20px; }
+    .footer .footer__bottom .footer__logo span {
+      margin-top: 10px;
+      color: #686f7a;
+      font-size: 13px;
+      font-weight: normal; }
+    .footer .footer__bottom .footer__list ul {
+      display: flex;
+      position: relative; }
+      .footer .footer__bottom .footer__list ul li {
+        margin-right: 15px; }
+        .footer .footer__bottom .footer__list ul li:nth-child(1) {
+          position: absolute;
+          top: 0;
+          left: 90px; }
+        .footer .footer__bottom .footer__list ul li:nth-child(2) {
+          position: absolute;
+          top: 0;
+          right: -30px; }
+  @media screen and (max-width: 576px) {
+    .footer .footer__right {
+      border-top: 1px solid #dedfe0;
+      margin-top: 15px; }
+      .footer .footer__right i {
+        position: absolute;
+        top: 20px;
+        left: 8px; }
+      .footer .footer__right select {
+        padding: 5px 30px;
+        position: absolute;
+        top: 10px;
+        left: 0; }
+    .footer .footer__bottom .footer__list ul {
+      display: flex;
+      position: relative; }
+      .footer .footer__bottom .footer__list ul li {
+        margin-right: 15px; }
+        .footer .footer__bottom .footer__list ul li:nth-child(1) {
+          position: absolute;
+          top: 0;
+          left: 0; }
+        .footer .footer__bottom .footer__list ul li:nth-child(2) {
+          position: absolute;
+          top: 0;
+          right: -50px; } }
+
 /*# sourceMappingURL=main.css.map */
