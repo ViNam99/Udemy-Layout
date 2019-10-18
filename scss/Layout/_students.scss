@@ -72,7 +72,15 @@
                 button {
                     color: white;
                 }
-                &:first-child {
+                p {
+                    margin-top: 10px;
+                    width: 50%;
+                    margin: 0 auto;
+                    padding: 15px 0;
+                }
+            }
+            &:nth-child(1) {
+                .trusted__inside {
                     border-right: 1px solid #dedfe0;
                 }
             }

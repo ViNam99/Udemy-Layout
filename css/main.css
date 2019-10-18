@@ -410,8 +410,13 @@ body {
           text-decoration: none; }
         .students .student__udemy .trusted__item .trusted__inside button {
           color: white; }
-        .students .student__udemy .trusted__item .trusted__inside:first-child {
-          border-right: 1px solid #dedfe0; }
+        .students .student__udemy .trusted__item .trusted__inside p {
+          margin-top: 10px;
+          width: 50%;
+          margin: 0 auto;
+          padding: 15px 0; }
+      .students .student__udemy .trusted__item:nth-child(1) .trusted__inside {
+        border-right: 1px solid #dedfe0; }
   @media screen and (max-width: 576px) {
     .students .trusted__item:first-child {
       border-bottom: 1px solid #dedfe0;
