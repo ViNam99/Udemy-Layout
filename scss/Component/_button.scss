@@ -7,7 +7,7 @@
 }
 
 .btn__red {
-    @include styleText($fs-0, $fw-bold-0, $color-white-0);
+    @include styleText($fs-0 !important, $fw-bold-0 !important, $color-white-0 !important);
     @include styleButton($color-red-0, $color-red-0, $pd-1 + 1, $pd-1 + 2);
     &:hover {
         @include styleHover($color-red-2, $color-trans, $color-white-0);

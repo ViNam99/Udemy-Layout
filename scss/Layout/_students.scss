@@ -1,0 +1,89 @@
+.students {
+    background-color: $color-gray-5;
+    margin-top: 15px;
+    .students__content {
+        h3 {
+            padding: 25px 0;
+            @include styleText($color-black-0, $fs-3, $fw-bold);
+        }
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        .students__item {
+            background: $color-white-0;
+            padding: 20px 0;
+            height: 250px;
+            border-radius: 3px;
+            box-shadow: 0 1px 3px 0 rgba(20, 23, 28, .15);
+            .students__inside {
+                width: 85%;
+                margin: 0 auto;
+                .student__img {
+                    width: 64px;
+                    height: 64px;
+                    line-height: 64px;
+                    border-radius: 50%;
+                    background-color: $color-gray-4;
+                    display: inline-block;
+                    text-align: center;
+                    @include styleText($color-black-0, $fs-0 + 1, $fw-bold);
+                }
+                img {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    display: inline;
+                }
+                span {
+                    margin-left: 10px;
+                    @include styleText($color-black-0, $fs-0 + 1, $fw-bold);
+                }
+                p {
+                    margin-top: 15px;
+                    @include styleText($color-black-0, $fs-0 + 1, $fw-normal);
+                    line-height: 1.5em;
+                }
+            }
+        }
+    }
+    .student__trusted {
+        padding: 50px 0;
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        h6 {
+            @include styleText($color-black-0, $fs-1, $fw-normal);
+            padding: 30px;
+        }
+    }
+    .student__udemy {
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+        .trusted__item {
+            padding: 28px 30px;
+            .trusted__inside {
+                width: 100%;
+                margin: 0 auto;
+                a {
+                    @include styleText($color-black-0, $fs-2 - 1, $fw-bold);
+                    text-decoration: none;
+                }
+                button {
+                    color: white;
+                }
+                &:first-child {
+                    border-right: 1px solid #dedfe0;
+                }
+            }
+        }
+    }
+    @include respond-to('small') {
+        .trusted__item {
+            &:first-child {
+                border-bottom: 1px solid #dedfe0;
+                border-right: none !important;
+            }
+        }
+    }
+}
